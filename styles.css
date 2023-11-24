@@ -1,0 +1,155 @@
+/* Styles for the top-aligned navigation menu */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Horizontally align items */
+    align-items: center; /* Vertically align items */
+    background-color: #000000;
+    padding: 20px;
+}
+
+/* Style for the logo */
+.logo {
+    background-color: #000000;
+} 
+
+/* Center-align menu items */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display menu items side by side */
+}
+
+/* Styles for individual menu items */
+.menu li {
+    margin-right: 150px; /* Increase the spacing between menu items */
+}
+/* Styles for the menu item text */
+.menu a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+    /* Remove underline from menu items on hover and active state */
+    text-decoration: none;
+}
+
+/* Remove underline from menu items on hover and active state */
+.menu a:hover,
+.menu a:active {
+    text-decoration: none;
+}
+
+
+/* Styles for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.search-bar button i {
+    font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.cart ion-icon { 
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: px;
+}
+
+.cart a {
+    background-color: rgb(5, 5, 5);
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.image {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.add-cart {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6,
+.image:hover .cart7,
+.image:hover .cart8,
+.image:hover .cart9 {
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+}
+
+body {
+    background:linear-gradient(black,rgb(176, 116, 255));
+}
+
+.rating {
+    color: #FFD700; /* Yellow color for filled stars */
+    font-size: 24px; /* Adjust the size as needed */
+}
+.checkout-btn {
+    background-color: #2600ff; /* Set the background color */
+    color: #fff; /* Set the text color */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Adjust the font size as needed */
+    cursor: pointer; /* Change the cursor on hover */
+    transition: background-color 0.3s; /* Add a smooth color transition */
+  }
+  
+  .checkout-btn:hover {
+    background-color: #6522ff; /* Change the background color on hover */
+  }

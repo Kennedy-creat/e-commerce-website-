@@ -1,0 +1,186 @@
+
+/* Styles for the top-aligned navigation menu */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Horizontally align items */
+    align-items: center; /* Vertically align items */
+    background-color: #000000;
+    padding: 20px;
+}
+
+/* Style for the logo */
+.logo {
+    background-color: #000000;
+} 
+
+/* Center-align menu items */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display menu items side by side */
+}
+
+/* Styles for individual menu items */
+.menu li {
+    margin-right: 150px; /* Increase the spacing between menu items */
+}
+/* Styles for the menu item text */
+.menu a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+    /* Remove underline from menu items on hover and active state */
+    text-decoration: none;
+}
+
+/* Remove underline from menu items on hover and active state */
+.menu a:hover,
+.menu a:active {
+    text-decoration: none;
+}
+
+
+/* Styles for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.search-bar button i {
+    font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+body {
+    background:linear-gradient(black,rgb(176, 116, 255));
+}
+
+.container,
+.products-container  {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+
+
+/* Example CSS for the circle X-mark icon */
+.products .fas.fa-times-circle {
+    color: rgb(83, 52, 255); /* Change the color if needed */
+    font-size: 24px;
+    margin-left: auto; /* Adjust the icon size */
+    /* Add any other required styles */
+}
+
+/* CSS for left and right arrow icons */
+.products .fa-chevron-left,
+.products .fa-chevron-right {
+    font-size: 20px; /* Adjust the icon size */
+    color: #0000FF; /* Change the color for the left arrow */
+    margin-right: 5px; /* Add space between the icons */
+}
+
+
+
+.product-header{
+width: 100%;
+max-width: 650px;
+justify-content: flex-start;
+display: flex;
+border-bottom: 4px solid lightgrey ;
+margin: 0 auto;
+}
+ 
+.product-title {
+ width: 45%;
+
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid lightgrey ;
+    display: flex;
+    align-items: center;
+
+}
+
+.quantity {
+    width: 15%; /* Adjust this width */
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 25%; /* Adjust this width */
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+.checkout-btn {
+    background-color: #6f00ff; /* Set the background color */
+    color: #fff; /* Set the text color */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Adjust the font size as needed */
+    cursor: pointer; /* Change the cursor on hover */
+    transition: background-color 0.3s; /* Add a smooth color transition */
+  }
+  
+  .checkout-btn:hover {
+    background-color: rgb(0, 47, 255); /* Change the background color on hover */
+  }
